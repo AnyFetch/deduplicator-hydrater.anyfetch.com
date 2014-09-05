@@ -3,4 +3,11 @@
 
 Remove duplicate document thanks to a hash of metadata
 
-Support: `support@papiel.fr`.
+# How to install?
+```
+npm install
+```
+
+Check everything is working with `npm test`.
+
+Support: `support@anyfetch.com`.
