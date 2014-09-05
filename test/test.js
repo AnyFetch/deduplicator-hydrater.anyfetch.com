@@ -10,7 +10,7 @@ describe('Test starting', function() {
     // Start the server
     server.listen(config.port, function() {
       console.log("Server listening on " + server.url);
-      done();
+      server.close(done);
     });
   });
 });
