@@ -73,6 +73,8 @@ describe('Test deduplicator hydrater', function() {
 
     var changes = {};
     var endHydrating = function(err, changes) {
+      server.restore();
+      
       changes.should.have.property('hash', 'a5e744d0164540d33b1d7ea616c28f2fa97e754a');
       deleted.should.have.lengthOf(2);
       done(err);
