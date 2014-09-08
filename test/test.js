@@ -49,6 +49,7 @@ describe('Test deduplicator hydrater', function() {
       {
         id: '4af9f23d8ead0e1d32000003',
         identifier: 'doc3-identifier',
+        hash: 'a5e744d0164540d33b1d7ea616c28f2fa97e754a',
         metadata: {
           foo: 'bar'
         }
