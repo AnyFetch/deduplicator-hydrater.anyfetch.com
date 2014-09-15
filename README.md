@@ -1,7 +1,7 @@
 # Deduplicator Hydrater
 > Visit http://anyfetch.com for details about AnyFetch.
 
-Remove duplicate document thanks to a hash of metadata
+Remove duplicated documents on your AnyFetch account by generating and comparing hash on metadata.
 
 # How to install?
 ```
