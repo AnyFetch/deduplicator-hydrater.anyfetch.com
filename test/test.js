@@ -28,7 +28,7 @@ describe('Test deduplicator hydrater', function() {
 
   after(function(done) { server.close(done); });
 
-  it('should works', function(done) {
+  it('should work', function(done) {
     var docs = [
       {
         id: '4af9f23d8ead0e1d32000001',
