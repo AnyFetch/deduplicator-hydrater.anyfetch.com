@@ -61,7 +61,7 @@ describe('Test deduplicator hydrater', function() {
     server.override('get', '/documents', function(req, res, next) {
       res.send({
         data: docs.filter(function(doc) {
-          return doc.hash === req.params.hash;
+          return doc.hash === req.params['@hash'];
         }),
       });
 
@@ -78,7 +78,7 @@ describe('Test deduplicator hydrater', function() {
     var endHydrating = function(err, changes) {
       server.restore();
 
-      changes.should.have.property('hash', 'a5e744d0164540d33b1d7ea616c28f2fa97e754a');
+      changes.metadata.should.have.property('hash', 'a5e744d0164540d33b1d7ea616c28f2fa97e754a');
       deleted.should.have.lengthOf(2);
       done(err);
     };
