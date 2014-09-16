@@ -18,5 +18,5 @@ module.exports = {
   env: node_env,
   port: process.env.PORT || default_port,
 
-  concurrency: process.env.HYDRATER_BOILERPLATE_CONCURRENCY || default_concurrency
+  concurrency: process.env.DEDUPLICATOR_CONCURRENCY || default_concurrency
 };
