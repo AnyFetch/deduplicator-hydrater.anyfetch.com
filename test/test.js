@@ -13,10 +13,9 @@ describe('Test deduplicator hydrater', function() {
     // Start the server
     server.listen(config.port, function() {
       console.log("Server listening on " + server.url);
-      server.close(function(err) {
-        console.log("DEBUG");
-        done(err);
-      });
+      setTimeout(function() {
+        server.close(done);
+      }, 1000);
     });
   });
 
