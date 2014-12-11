@@ -18,7 +18,9 @@ module.exports = {
   env: nodeEnv,
   port: process.env.PORT || defaultPort,
 
-  concurrency: process.env.DEDUPLICATOR_CONCURRENCY || defaultConcurrency,
+  concurrency: process.env.CONCURRENCY || defaultConcurrency,
+  tasksPerProcess: process.env.TASKS_PER_PROCESS,
+
   appName: process.env.APP_NAME || "deduplicator-hydrater",
   redisUrl: process.env.REDIS_URL,
 
