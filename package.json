@@ -21,9 +21,10 @@
     "deduplicator"
   ],
   "dependencies": {
-    "async": "0.9.x",
+    "anyfetch": "^2.1.8",
     "anyfetch-hydrater": "^2.0.6",
-    "anyfetch": "^2.1.8"
+    "async": "0.9.x",
+    "heroku-self-ping": "^1.1.1"
   },
   "devDependencies": {
     "mocha": "^2.0.1",
