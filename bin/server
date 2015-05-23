@@ -1,4 +1,7 @@
 #!/bin/env node
+'use strict';
+
+require('heroku-self-ping')(process.env.SELF_URL);
 
 // Load configuration
 var config = require("../config/configuration.js");
@@ -6,5 +9,5 @@ var server = require('../app.js');
 
 // Start the server
 server.listen(config.port, function() {
-  console.log("Server listening on " + server.url);
+  console.log("server listening on port " + config.port);
 });
